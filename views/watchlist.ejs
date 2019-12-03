@@ -46,8 +46,7 @@
                
                 <% for(var j=0;j<myUlist[i].UserWatchlist.length;j++){ %>
                         <% console.log(myUlist[i].UserWatchlist[j]) %>
-                <li> <h1> <%- myUlist[i].UserWatchlist[j] %> </h1> </li>  
-          <% }; %>
+                        <li><h1> <%-     " "+`<a href=${"/"+myUlist[i].UserWatchlist[j]}>${myUlist[i].UserWatchlist[j]} </a>`   %> </h1></li>          <% }; %>
           <% }; %>
           <% }; %>
 
